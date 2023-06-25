@@ -48,6 +48,14 @@ form {
     gap: .5rem;
 }
 
+input {
+    font-family: "Karla", sans-serif;
+    border-radius: .33rem;
+    border: 1px solid #D5D4D8;
+    text-indent: .33rem;
+    padding: .25rem 0;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 450px) {
