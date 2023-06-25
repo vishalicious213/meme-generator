@@ -14,7 +14,7 @@ export default function Meme() {
                     id="input-bot" 
                     placeholder="Bottom text" 
                 />
-                <button>Get a new meme image 🖼</button>
+                <button type="button">Get a new meme image 🖼</button>
             </form>
         </main>
     )
