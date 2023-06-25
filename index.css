@@ -37,11 +37,36 @@ header h4 {
     font-weight: 500;
 }
 
+/* MEME / FORM */
+
+main {
+    padding: 2rem 1rem;
+}
+
+form {
+    display: grid;
+    gap: .5rem;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 450px) {
     header h4 {
         display: block;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    form {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        gap: 1rem;
+    }
+
+    button {
+        grid-column: 1 / -1;
     }
 }
 
@@ -49,16 +74,4 @@ header h4 {
     .header-logo {
         font-size: 1.25rem;
     }
-}
-
-/* MEME / FORM */
-
-form {
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    gap: 1rem;
-}
-
-button {
-    grid-column: 1 / -1;
 }
