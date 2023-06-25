@@ -2,7 +2,7 @@ import memesData from "../memesData"
 
 export default function Meme() {
     function getMeme() {
-        const randomNum = Math.floor(Math.random() * 100)
+        const randomNum = Math.floor(Math.random() * memesData.data.memes.length)
         console.log(memesData.data.memes[randomNum].url)
     }
 
