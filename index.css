@@ -40,8 +40,6 @@ header h4 {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 450px) {
-
-
     header h4 {
         display: block;
     }
