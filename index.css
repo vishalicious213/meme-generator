@@ -50,3 +50,15 @@ header h4 {
         font-size: 1.25rem;
     }
 }
+
+/* MEME / FORM */
+
+form {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 1rem;
+}
+
+button {
+    grid-column: 1 / -1;
+}
