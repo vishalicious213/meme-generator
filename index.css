@@ -6,3 +6,26 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 1.25rem;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.header-logo img {
+    width: 2rem;
+    margin-right: .5rem;
+}

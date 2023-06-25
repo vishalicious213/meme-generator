@@ -1,7 +1,7 @@
 export default function Header() {
     return (
         <header>
-            <div>
+            <div className="header-logo">
                 <img src="./troll-face.png" alt="troll face" />
                 <h2>Meme Generator</h2>
             </div>
