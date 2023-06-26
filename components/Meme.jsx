@@ -11,11 +11,10 @@ export default function Meme() {
 
     function getMemeImage() {
         const randomNum = Math.floor(Math.random() * allMemeImages.data.memes.length)
-        setMeme({
-            topText: "",
-            bottomText: "",
+        setMeme(prevMeme => ({
+            ...prevMeme,
             randomImage: allMemeImages.data.memes[randomNum].url
-        })
+        }))
     }
 
     return (
