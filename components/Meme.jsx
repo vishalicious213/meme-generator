@@ -4,8 +4,8 @@ import memesData from "../memesData"
 export default function Meme() {
     const [allMemeImages, setAllMemeImages] = useState(memesData)
     const [meme, setMeme] = useState({
-        topText: "One does not simply", 
-        bottomText: "Walk into Mordor", 
+        topText: "", 
+        bottomText: "", 
         randomImage: "http://i.imgflip.com/1bij.jpg"
     })
 
@@ -36,6 +36,7 @@ export default function Meme() {
                     id="input-top" 
                     placeholder="Top text" 
                     value={meme.topText}
+                    onChange={handleChange}
                 />
                 <input 
                     type="text" 
@@ -43,6 +44,7 @@ export default function Meme() {
                     id="input-bot" 
                     placeholder="Bottom text" 
                     value={meme.bottomText}
+                    onChange={handleChange}
                 />
                 <button type="button" onClick={getMemeImage}>Get a new meme image 🖼</button>
             </form>
