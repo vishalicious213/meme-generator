@@ -17,20 +17,32 @@ export default function Meme() {
         }))
     }
 
+    function handleChange(event) {
+        const {name, value} = event.target
+        setMeme(prevState => {
+            return {
+                ...prevState,
+                [name]: value
+            }
+        })
+    }
+
     return (
         <main>
             <form>
                 <input 
                     type="text" 
-                    name="input-top" 
+                    name="topText" 
                     id="input-top" 
                     placeholder="Top text" 
+                    value={meme.topText}
                 />
                 <input 
                     type="text" 
-                    name="input-bot" 
+                    name="bottomText" 
                     id="input-bot" 
                     placeholder="Bottom text" 
+                    value={meme.bottomText}
                 />
                 <button type="button" onClick={getMemeImage}>Get a new meme image 🖼</button>
             </form>
