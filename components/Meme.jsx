@@ -4,8 +4,8 @@ import memesData from "../memesData"
 export default function Meme() {
     const [allMemeImages, setAllMemeImages] = useState(memesData)
     const [meme, setMeme] = useState({
-        topText: "", 
-        bottomText: "", 
+        topText: "One does not simply", 
+        bottomText: "Walk into Mordor", 
         randomImage: "http://i.imgflip.com/1bij.jpg"
     })
 
@@ -37,8 +37,8 @@ export default function Meme() {
 
             <div className="meme">
                 <img src={meme.randomImage} className="meme-image" alt="meme-image" />
-                <h2 className="meme-text top">One does not simply</h2>
-                <h2 className="meme-text bottom">Walk into Mordor</h2>
+                <h2 className="meme-text top">{meme.topText}</h2>
+                <h2 className="meme-text bottom">{meme.bottomText}</h2>
             </div>
         </main>
     )
