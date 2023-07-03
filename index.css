@@ -132,6 +132,10 @@ button {
     button {
         grid-column: 1 / -1;
     }
+
+    .meme-text {
+        font-size: 1.75rem;
+    }
 }
 
 @media screen and (min-width: 500px) {
@@ -139,3 +143,28 @@ button {
         font-size: 1.25rem;
     }
 }
+
+@media screen and (min-width: 600px) {
+    .meme-text {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .meme-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .meme-text {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .meme-text {
+        font-size: 3.5rem;
+    }
+}
+
