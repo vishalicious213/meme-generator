@@ -72,6 +72,11 @@ button {
     position: relative;
 }
 
+.meme-name {
+    text-transform: capitalize;
+    color: rgb(173, 173, 173)
+}
+
 .meme-image {
     display: block;
     width: 100%;
